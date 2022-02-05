@@ -13,7 +13,7 @@ app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
 app.secret_key = b'\xd2(*K\xa0\xa8\x13]g\x1e9\x88\x10\xb0\xe0\xcc'
 
 #Loads the Database and Collections
-mongo = pymongo.MongoClient('mongodb+srv://admin:admin@cluster0.i0iqp.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', maxPoolSize=50, connect=True)
+mongo = pymongo.MongoClient('mongodb+srv://admin:project@cluster0.s8sew.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', maxPoolSize=50, connect=True)
 db = pymongo.database.Database(mongo, 'vyapara')
 
 @app.route('/api/test')
